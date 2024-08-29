@@ -27,9 +27,7 @@ const Register = () => {
     <div>
       <h1>Cadastre-se para postar</h1>
       <p>Crie seu usuário e compartilhe suas histórias</p>
-      <form>
-        {" "}
-        onSubmit={handleSubmit}
+      <form onSubmit={handleSubmit}>
         <label>
           <span>Nome:</span>
           <input
