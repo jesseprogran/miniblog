@@ -22,9 +22,11 @@ const Register = () => {
       setError("As senhas precisam ser igauis!");
       return;
     }
+
+    console.log(user)
   };
   return (
-    <div>
+    <div className={styles.register}>
       <h1>Cadastre-se para postar</h1>
       <p>Crie seu usuário e compartilhe suas histórias</p>
       <form onSubmit={handleSubmit}>
@@ -73,6 +75,7 @@ const Register = () => {
           />
         </label>
         <button className="btn">Cadastrar</button>
+        {error && <p className="error">{error}</p>}
       </form>
     </div>
   );

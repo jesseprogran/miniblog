@@ -42,7 +42,7 @@ form {
 label {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1px;
+  margin-bottom: 1em;
 }
 
 label span {
@@ -60,7 +60,6 @@ input, textarea {
 }
 
 .btn {
-  margin-top: 4px;
   background-color: #4bc0ba;
   color: #FFF;
   text-align: center;
