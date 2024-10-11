@@ -9,6 +9,7 @@ import { useState } from "react";
 
 export const Home = () => {
   const [query, setQuery] = useState("");
+  const [posts] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,7 +18,11 @@ export const Home = () => {
     <div>
       <h1>Veja nossos posts mais recentes</h1>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="ou busque por tags..." onChange={(e) => setQuery(e.target.value)}/>
+        <input
+          type="text"
+          placeholder="ou busque por tags..."
+          onChange={(e) => setQuery(e.target.value)}
+        />
         <button className="btn btn-dark">Pesquisar</button>
       </form>
       <div>
